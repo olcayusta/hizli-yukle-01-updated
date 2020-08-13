@@ -1,0 +1,12 @@
+.mat-dialog-actions {
+  box-sizing: content-box;
+}
+
+::ng-deep .mat-dialog-container {
+  border-radius: 8px !important;
+}
+
+.mat-dialog-content span {
+  font-size: 14px;
+  line-height: 20px;
+}

@@ -1,0 +1,33 @@
+<mat-toolbar class="mat-elevation-z4">
+  <button mat-icon-button (click)="openSidenav.emit()" aria-label="Menüyü aç">
+    <app-menu-icon></app-menu-icon>
+  </button>
+  <a routerLink="/" class="site-link">
+    <span class="toolbar-title">Hızlı Resim</span>
+    <sup>beta 1</sup>
+  </a>
+
+  <span class="flex-spacer"></span>
+
+  <ng-container *ngIf="user else notLogged">
+
+    <button class="avatar-button" matTooltip="Hesap" #avatarButton="cdkOverlayOrigin"
+            cdkOverlayOrigin (click)="isOpen = !isOpen">
+      <span class="avatar-placeholder">
+        <img class="avatar" src="{{user.avatarUrl}}" alt="{{user.displayName}}">
+      </span>
+    </button>
+
+    <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="avatarButton"
+                 [cdkConnectedOverlayScrollStrategy]="scrolBlockStrategy"
+                 [cdkConnectedOverlayOpen]="isOpen">
+      <app-avatar-popup [user]="user" (appOutsideClick)="outSideClick()"
+                        (closePopup)="outSideClick()"></app-avatar-popup>
+    </ng-template>
+  </ng-container>
+
+  <ng-template #notLogged>
+    <a mat-button routerLink="/login">OTURUM AÇ</a>
+  </ng-template>
+
+</mat-toolbar>

@@ -1,0 +1,35 @@
+mat-progress-bar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+@media (prefers-color-scheme: light) {
+  ::ng-deep .mat-progress-bar-background {
+    background: #D9C2FB;
+    background: #d4cbff;
+  }
+
+  ::ng-deep .mat-progress-bar-buffer {
+    background: #D9C2FB;
+    background: #d4cbff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ::ng-deep .mat-progress-bar-background {
+    fill: #4c3f5b !important;
+  }
+
+  ::ng-deep .mat-progress-bar-buffer {
+    background-color: #4c3f5b !important;
+  }
+
+  ::ng-deep .mat-progress-bar-fill::after {
+    // background-color: #4c3f5b !important;
+    // background: #4a445c !important;
+    background: #BB86FC;
+  }
+}
+
+

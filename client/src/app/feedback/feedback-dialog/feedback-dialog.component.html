@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Geri bildirim gönder</h2>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Mesajınız</mat-label>
+    <textarea [formControl]="msgControl" spellcheck="false" matInput cdkTextareaAutosize cdkAutosizeMinRows="4" cdkAutosizeMaxRows="8"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>İPTAL</button>
+  <button mat-button [mat-dialog-close]="msgControl.value" color="primary">GÖNDER</button>
+</div>

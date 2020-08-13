@@ -1,0 +1,27 @@
+<form autocomplete="off" spellcheck="false" [formGroup]="loginForm" (submit)="formSubmit()">
+
+  <mat-progress-bar mode="indeterminate" *ngIf="submitted"></mat-progress-bar>
+
+<!--  <button type="button" mat-raised-button>GOOGLE İLE OTURUM AÇ</button>-->
+
+  <h1>Oturum aç</h1>
+
+  <div class="form-content">
+    <mat-form-field>
+      <mat-label>E-posta</mat-label>
+      <input matInput value="olcay@mail.com" formControlName="email">
+      <mat-error *ngIf="loginForm.get('email').hasError('required')">Bir e-posta girin</mat-error>
+
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Şifre</mat-label>
+      <input type="password" matInput value="123456" formControlName="password">
+      <mat-error *ngIf="loginForm.get('password').hasError('required')">Bir şifre girin</mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="form-row-actions">
+    <button type="submit" mat-raised-button color="primary">İLERİ</button>
+  </div>
+</form>

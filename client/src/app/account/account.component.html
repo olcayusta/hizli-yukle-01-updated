@@ -1,0 +1,74 @@
+<div class="account-top">
+  <div class="img-placeholder">
+    <img src="{{user.avatarUrl}}" alt="">
+    <div class="change-photo">
+      <button mat-icon-button (click)="file.click()">
+        <app-camera-alt-icon></app-camera-alt-icon>
+      </button>
+    </div>
+  </div>
+
+  <input id="file" type="file" #file (change)="fileInputChange($event)">
+
+  <h1>{{user.displayName}}</h1>
+</div>
+
+<mat-accordion>
+  <mat-expansion-panel #panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>E-posta</mat-panel-title>
+      <mat-panel-description>olcay@mail.com</mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <form autocomplete="off" spellcheck="false" [formGroup]="form" (submit)="formSubmit()">
+     <div>
+       <mat-form-field>
+         <input matInput value="Olcay Usta" formControlName="email">
+       </mat-form-field>
+       <mat-form-field>
+         <input matInput value="123456" formControlName="password">
+       </mat-form-field>
+     </div>
+    </form>
+
+    <mat-action-row>
+      <button type="button" mat-button (click)="panel.close()">İptal</button>
+      <button type="submit" mat-button color="primary">Kaydet</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+<!--  <mat-expansion-panel #panel>-->
+<!--    <mat-expansion-panel-header>-->
+<!--      Şifre-->
+<!--    </mat-expansion-panel-header>-->
+
+<!--    <form autocomplete="off" spellcheck="false" [formGroup]="form" (submit)="formSubmit()">-->
+<!--      <mat-form-field>-->
+<!--        <input matInput value="Olcay Usta" formControlName="displayName">-->
+<!--      </mat-form-field>-->
+<!--    </form>-->
+
+<!--    <mat-action-row>-->
+<!--      <button type="button" mat-button (click)="panel.close()">İptal</button>-->
+<!--      <button type="submit" mat-button color="primary">Kaydet</button>-->
+<!--    </mat-action-row>-->
+<!--  </mat-expansion-panel>-->
+  <mat-expansion-panel #panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Display Name</mat-panel-title>
+      <mat-panel-description>
+        {{user.displayName}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <form autocomplete="off" spellcheck="false" id="form1" [formGroup]="form" (submit)="formSubmit()">
+      <mat-form-field>
+        <input matInput value="Olcay Usta" formControlName="displayName">
+      </mat-form-field>
+    </form>
+
+    <mat-action-row>
+      <button type="button" mat-button (click)="panel.close()">İptal</button>
+      <button type="submit" form="form1" mat-button color="primary">Kaydet</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>

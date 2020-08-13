@@ -1,0 +1,25 @@
+<div class="container">
+
+  <div class="logo">
+    <img height="256" class="logo-img"
+         src="https://assets-ouch.icons8.com/thumb/84/2689e7ac-d616-4927-97f8-dc9f4708400a.png"
+         alt="" draggable="false">
+  </div>
+
+  <div class="upload-box">
+    <div class="primary-text">Basit, hızlı</div>
+    <div class="secondary-text">
+      <span>Yüklenecek dosyaları herhangi bir yere bırakın veya</span>
+      <button mat-raised-button color="primary" (click)="file.click()">BURAYA TIKLAYARAK</button>
+      <span>seçin</span>
+    </div>
+  </div>
+
+  <input #file id="file" type="file" accept="image/*" formenctype="multipart/form-data" multiple
+         (change)="onChange($event)">
+
+  <router-outlet></router-outlet>
+
+</div>
+
+

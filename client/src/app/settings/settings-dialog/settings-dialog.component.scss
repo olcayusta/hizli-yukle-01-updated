@@ -1,0 +1,63 @@
+::ng-deep .mat-dialog-actions {
+  box-sizing: content-box;
+}
+
+::ng-deep .settings-dialog .mat-dialog-container {
+  padding: 0;
+}
+
+:host ::ng-deep .mat-dialog-content {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+::ng-deep .mat-select-panel {
+  padding: 8px 0 !important;
+}
+
+h1 {
+  margin: 16px 16px;
+}
+
+.my-dialog-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.left {
+  border-right: 1px solid var(--border-color);
+}
+
+.row-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 24px 16px;
+}
+
+:host ::ng-deep .mat-list-item {
+  font-size: 14px !important;
+  line-height: 24px !important;
+}
+
+mat-form-field {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+//:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+//  padding: .75em 0 0 0;
+//}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background: none;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: .75em 0 0 0;
+}
+
+mat-nav-list {
+  padding: 8px 0;
+}

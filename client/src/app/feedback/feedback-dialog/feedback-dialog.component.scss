@@ -1,0 +1,25 @@
+mat-form-field {
+  width: 100%;
+}
+
+:host .mat-dialog-actions {
+  box-sizing: content-box !important;
+}
+
+textarea {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+mat-form-field {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: .75em 0 0 0;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+  background: none;
+}

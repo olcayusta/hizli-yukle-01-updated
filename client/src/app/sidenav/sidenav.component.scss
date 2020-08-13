@@ -1,0 +1,89 @@
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: none;
+}
+
+app-branding-watermark-icon,
+app-feedback-icon,
+app-settings-icon,
+app-help-icon,
+app-home-icon,
+app-photo-library-icon,
+app-menu-icon {
+  display: inline-flex;
+  fill: var(--icon-color);
+}
+
+app-branding-watermark-icon,
+app-feedback-icon,
+app-settings-icon,
+app-help-icon,
+app-home-icon,
+app-photo-library-icon {
+  // margin-left: 8px;
+  fill: var(--list-icon-color);
+}
+
+.site-link {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+sup {
+  line-height: 1;
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--medium-emphasis-color);
+}
+
+:host ::ng-deep .mat-list-base .mat-list-item .mat-list-item-content {
+  padding: 0 24px !important;
+}
+
+.mat-list-item span {
+  margin-left: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .1px;
+  color: var(--list-item-color);
+}
+
+.mat-list-item.active {
+  background-color: var(--list-active-background);
+
+  app-home-icon,
+  app-photo-library-icon {
+    fill: var(--list-active-color);
+  }
+
+  span {
+    color: var(--list-active-color);
+    font-weight: 500;
+  }
+}
+
+mat-nav-list {
+  padding: 8px 0;
+}
+
+.copyright-text {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--medium-emphasis-color);
+  margin-left: 24px;
+}
+
+.mat-subheader {
+  font-size: 13px !important;
+  line-height: 24px !important;
+  margin-left: 8px !important;
+  margin-top: 0 !important;
+}

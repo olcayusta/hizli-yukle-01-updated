@@ -1,0 +1,86 @@
+:host {
+  display: block;
+  padding-top: 128px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.account-top {
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-placeholder {
+  width: 160px;
+  height: 160px;
+  border: solid gray;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--card-background);
+  margin: 0 auto;
+  position: relative;
+}
+
+.change-photo {
+  background-color: rgba(0, 0, 0, 0.54);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+app-camera-alt-icon {
+  display: inline-flex;
+}
+
+:host ::ng-deep svg {
+  fill: var(--icon-color);
+}
+
+.img-placeholder:hover {
+
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-accordion {
+  display: block;
+  margin-top: 24px;
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-form-field {
+  margin-right: 12px;
+}
+
+#file {
+  display: none;
+}

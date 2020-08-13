@@ -1,0 +1,22 @@
+<mat-form-field appearance="fill">
+  <mat-label>Sıralama</mat-label>
+  <mat-select disableOptionCentering value="newest">
+    <mat-option *ngFor="let sort of sorts" [value]="sort.value">
+      {{sort.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div class="grid">
+  <div class="grid-item" *ngFor="let post of posts">
+    <div class="img-placeholder">
+      <img [attr.data-lazy]="post.images[0].publicUrl" appImgLazyLoad>
+    </div>
+    <div class="details">
+      <a [routerLink]="['/p', post.id]">
+        <div class="title">{{post.id}}</div>
+      </a>
+      <div class="count">{{post.images.length}} öğe</div>
+    </div>
+  </div>
+</div>

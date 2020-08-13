@@ -1,0 +1,86 @@
+:host {
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 4px;
+}
+
+.avatar-popup {
+  width: 364px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 2px 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14);
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  .img-placeholder {
+    width: 64px;
+    height: 64px;
+    background: var(--medium-emphasis-color);
+    margin-right: 24px;
+    border-radius: 50%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .primary-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .secondary-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--medium-emphasis-color);
+  }
+}
+
+app-exit-to-app-icon,
+app-settings-icon {
+  display: inline-flex;
+  margin-right: 16px;
+}
+
+mat-nav-list {
+  padding: 8px 0;
+}
+
+.mat-list-item {
+  height: 40px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.mat-list-item span {
+  font-size: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .avatar-popup {
+    background-color: #383838;
+    color: #fff;
+  }
+
+  app-exit-to-app-icon,
+  app-settings-icon {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  app-exit-to-app-icon,
+  app-settings-icon {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+}

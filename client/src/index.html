@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Hızlı Resim</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Basit ve hızlı resim yükleme servisi">
+
+  <script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+      document.documentElement.style.display = 'none';
+      document.head.insertAdjacentHTML(
+        'beforeend',
+        '<link rel="stylesheet" href="/light.css" onload="document.documentElement.style.display = \'\'">'
+      );
+    }
+  </script>
+
+  <meta name="google-signin-client_id" content="471440911060-rl9e80le54u8q5jf6ibjlbs6auqlo52o.apps.googleusercontent.com">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&amp;display=swap" rel="stylesheet">
+
+  <!-- Theme -->
+  <link rel="stylesheet" href="/dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#9e9e9e">
+
+<!--  <meta name="google-signin-client_id" content="577686269522-toh2hmnmjnjtavv7i7n7fm693mgpmul1.apps.googleusercontent.com">-->
+
+  <script src="https://apis.google.com/js/api:client.js" defer></script>
+</head>
+<body>
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+</html>

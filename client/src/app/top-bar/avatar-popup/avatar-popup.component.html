@@ -1,0 +1,23 @@
+<div class="avatar-popup mat-elevation-z4">
+  <div class="menu-header">
+    <div class="img-placeholder">
+      <img src="{{user.avatarUrl}}" alt="{{user.displayName}}"></div>
+    <div>
+      <div class="primary-text">{{user.displayName}}</div>
+      <div class="secondary-text">{{user.email}}</div>
+    </div>
+  </div>
+  <mat-nav-list>
+    <a mat-list-item routerLink="/account" (click)="closePopup.emit()">
+      <app-settings-icon></app-settings-icon>
+      <span>Hesap & ayarlar</span>
+    </a>
+    <mat-list-item (click)="signOut()">
+      <app-exit-to-app-icon></app-exit-to-app-icon>
+      <span>Oturumu kapat</span>
+    </mat-list-item>
+  </mat-nav-list>
+</div>
+
+
+

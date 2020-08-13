@@ -1,0 +1,130 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$mat-deep-purple: (
+  50: #F2E7FE,
+  100: #DBB2FF,
+  200: #BB86FC,
+  300: #985EFF,
+  400: #7F39FB,
+  500: #6200EE,
+  600: #5600E8,
+  700: #3700B3,
+  800: #30009C,
+  900: #23036A,
+  A100: #b388ff,
+  A200: #7c4dff,
+  A400: #651fff,
+  A700: #6200ea,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
+$simple-upload-primary: mat-palette($mat-deep-purple);
+$simple-upload-accent: mat-palette($mat-deep-purple, A200, A100, A400);
+
+$simple-upload-warn: mat-palette($mat-red);
+
+$simple-upload-theme: mat-light-theme($simple-upload-primary, $simple-upload-accent, $simple-upload-warn);
+
+$background: map-get($simple-upload-theme, background);
+$background: map_merge($background, (
+  background: #fafafa,
+  app-bar: #fff,
+  scrim: #fff
+));
+
+$theme: map_merge($simple-upload-theme, (background: $background));
+
+@include mat-button-theme($theme);
+@include mat-toolbar-theme($theme);
+@include mat-list-theme($theme);
+@include mat-sidenav-theme($theme);
+@include mat-divider-theme($theme);
+@include mat-ripple-theme($theme);
+@include mat-dialog-theme($theme);
+@include mat-snack-bar-theme($theme);
+@include mat-input-theme($theme);
+@include mat-form-field-standard-theme($theme);
+@include mat-form-field-theme($theme);
+@include mat-progress-spinner-theme($theme);
+@include mat-progress-bar-theme($theme);
+@include mat-tooltip-theme($theme);
+@include mat-expansion-panel-theme($theme);
+@include mat-menu-theme($theme);
+@include mat-slider-theme($theme);
+@include mat-slide-toggle-theme($theme);
+@include mat-select-theme($theme);
+@include mat-option-theme($theme);
+
+/*@include mat-ripple;
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Roboto, monospace',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+@include angular-material-typography($custom-typography);*/
+
+.mat-elevation-z2 {
+  @include mat-elevation(2);
+}
+
+.mat-elevation-z4 {
+  @include mat-elevation(4);
+}
+
+.mat-elevation-z10 {
+  @include mat-elevation(10);
+}
+
+*::selection {
+  background-color: #6200ea;
+  color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.24);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.36);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.48);
+}
+
+:root {
+  --html-background: #fafafa;
+  --html-color: rgba(0, 0, 0, 0.87);
+  --drag-drop-background: #6200ee;
+  --list-active-background: rgba(98, 0, 238, 0.08);
+  --list-active-color: #6200ee;
+  --list-item-color: rgba(0, 0, 0, 0.6);
+  --card-background: #fff;
+  --medium-emphasis-color: rgba(0, 0, 0, 0.72);
+  --button-link-color: #6200EE;
+  --icon-color: rgba(0, 0, 0, .6);
+  --list-icon-color: rgba(0, 0, 0, 0.6);
+  --border-color: rgba(0, 0, 0, 0.12);
+
+  --scrollbar-track-background: #fafafa;
+  --scrollbar-track-border-color: rgba(0, 0, 0, 0.12);
+}
