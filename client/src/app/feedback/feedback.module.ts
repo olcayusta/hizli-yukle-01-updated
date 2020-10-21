@@ -9,7 +9,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 
-
 @NgModule({
   declarations: [FeedbackComponent, FeedbackDialogComponent],
   imports: [
