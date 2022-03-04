@@ -19,40 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba8783d1-4811-4e92-a53c-e5492e4cba34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/public/Saly-43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/public/experimental-upload.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/public/jungle-upload-1.png" afterDir="false" />
+    <list default="true" id="ba8783d1-4811-4e92-a53c-e5492e4cba34" name="Default Changelist" comment="Update project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/delete-dialog/delete-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/delete-dialog/delete-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/home/home.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/login/login.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/post/post.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/post/post.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/post/resolvers/post-resolver.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/post/resolvers/post-resolver.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/settings/settings-dialog/settings-dialog.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/settings/settings-dialog/settings-dialog.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/sidenav-container/sidenav-container.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/sidenav-container/sidenav-container.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/sidenav/sidenav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/sidenav/sidenav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/sidenav/sidenav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/sidenav/sidenav.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/top-bar/avatar-popup/avatar-popup.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/top-bar/avatar-popup/avatar-popup.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/top-bar/top-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/top-bar/top-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/top-bar/top-bar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/top-bar/top-bar.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/light.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/light.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/nodemon2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/api/middlewares/images.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/api/middlewares/images.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/api/middlewares/isImage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/api/middlewares/isImage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/api/middlewares/sendUploadToGCS.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/api/middlewares/sendUploadToGCS.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/api/routes/auth/AuthService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/api/routes/auth/AuthService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/api/routes/image/imageRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/api/routes/image/imageRouter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/api/routes/post/PostService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/api/routes/post/PostService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/api/routes/post/postRouter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/api/routes/post/postRouter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,8 +128,16 @@
       <workItem from="1643237004016" duration="1191000" />
       <workItem from="1643238864653" duration="8000" />
       <workItem from="1643758105271" duration="113000" />
-      <workItem from="1646351862753" duration="319000" />
+      <workItem from="1646351862753" duration="658000" />
     </task>
+    <task id="LOCAL-00001" summary="Update project">
+      <created>1646352420575</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646352420575</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,5 +153,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project" />
   </component>
 </project>

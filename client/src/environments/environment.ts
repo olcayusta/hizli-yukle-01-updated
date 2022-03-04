@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: '//192.168.1.2:3333',
+  apiUrl: '//localhost:3333',
   // apiUrl: '//35.226.9.68:3333',
   appName: 'Hızlı Resim'
 };
