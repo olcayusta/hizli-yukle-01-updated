@@ -1,12 +1,12 @@
-import { ChangeDetectorRef, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { Title } from '@angular/platform-browser';
-import { HttpEventType } from '@angular/common/http';
-import { Image } from '@shared/models/image.model';
-import { MatDialog } from '@angular/material/dialog';
-import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';
-import { ImageService } from '@shared/services/image.service';
+import {ChangeDetectorRef, Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {Title} from '@angular/platform-browser';
+import {HttpEventType} from '@angular/common/http';
+import {Image} from '@shared/models/image.model';
+import {MatDialog} from '@angular/material/dialog';
+import {DeleteDialogComponent} from '../delete-dialog/delete-dialog.component';
+import {ImageService} from '@shared/services/image.service';
 
 interface UploadState {
   progress: boolean;
@@ -56,11 +56,14 @@ export class PostComponent implements OnInit {
 
   async ngOnInit() {
     this.isUploading = !this.route.snapshot.data.post;
+    console.log(this.route.snapshot.data.post);
 
     const {progress, files} = history.state as UploadState;
     if (progress) {
       for (const file of Object.values(files)) {
+
         const img: any = await this.getImageInfo(file);
+
         const paddingTop = (img.height / img.width) * 100;
         this.files.push({data: file, inProgress: false, foo: 'bar', progress: 0, paddingTop});
       }

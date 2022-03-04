@@ -44,9 +44,14 @@ sup {
   padding: 0 24px !important;
 }
 
+:host ::ng-deep .mat-list-item {
+  border-radius: 100px;
+}
+
 .mat-list-item span {
-  margin-left: 32px;
-  font-weight: 500;
+  // margin-left: 32px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 900;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: .1px;
@@ -63,7 +68,7 @@ sup {
 
   span {
     color: var(--list-active-color);
-    font-weight: 500;
+    font-weight: 900;
   }
 }
 

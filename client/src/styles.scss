@@ -10,7 +10,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   color: var(--html-color);
 }
 
@@ -103,4 +103,15 @@ body::-webkit-scrollbar-track {
 
 button {
   user-select: none;
+}
+
+.mat-dialog-container {
+  border-radius: 24px !important;
+}
+
+.mat-dialog-title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
 }

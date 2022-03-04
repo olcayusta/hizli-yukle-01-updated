@@ -1,6 +1,7 @@
 import {Request, Response, Router} from 'express'
 
 import PostService from './PostService';
+import sendUploadToGCS from "../../middlewares/sendUploadToGCS";
 
 const router = Router();
 
@@ -12,7 +13,7 @@ export default (app: Router) => {
     try {
       const images = await PostService.getPostById(postId);
       res.send(images)
-    } catch (e) {
+    } catch (e: any) {
       res.status(e.status).send(e)
     }
   });

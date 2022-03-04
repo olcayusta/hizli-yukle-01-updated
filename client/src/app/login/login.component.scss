@@ -17,7 +17,8 @@ form {
   padding: 48px;
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 12px;
+  background-color: #fff;
 }
 
 form mat-progress-bar {
@@ -40,7 +41,7 @@ form mat-progress-bar {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 24px;
   line-height: 48px;
 }

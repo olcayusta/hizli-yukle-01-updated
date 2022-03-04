@@ -112,12 +112,12 @@ $custom-typography: mat-typography-config(
 }
 
 :root {
-  --html-background: #fafafa;
+  --html-background: #FFFBFE;
   --html-color: rgba(0, 0, 0, 0.87);
   --drag-drop-background: #6200ee;
-  --list-active-background: rgba(98, 0, 238, 0.08);
-  --list-active-color: #6200ee;
-  --list-item-color: rgba(0, 0, 0, 0.6);
+  --list-active-background: #E8DEF8;
+  --list-active-color: #1D192B;
+  --list-item-color: #49454F;
   --card-background: #fff;
   --medium-emphasis-color: rgba(0, 0, 0, 0.72);
   --button-link-color: #6200EE;
@@ -127,4 +127,8 @@ $custom-typography: mat-typography-config(
 
   --scrollbar-track-background: #fafafa;
   --scrollbar-track-border-color: rgba(0, 0, 0, 0.12);
+}
+
+mat-sidenav-container {
+  background: #FFFBFE !important;
 }

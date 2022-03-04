@@ -1,15 +1,14 @@
-import { ChangeDetectionStrategy, Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { PostService } from '@shared/services/post.service';
-import { Subscription } from 'rxjs';
-import { ImageService } from '@shared/services/image.service';
+import {ChangeDetectionStrategy, Component, HostListener, OnDestroy, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {PostService} from '@shared/services/post.service';
+import {Subscription} from 'rxjs';
+import {ImageService} from '@shared/services/image.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   filesToUpload: Array<File> = [];
@@ -88,14 +87,18 @@ export class HomeComponent implements OnInit {
   }
 
   onChange($event: Event) {
-    this.subscription = this.postService.requestToken().subscribe(async (value: any) => {
+    this.subscription = this.postService.requestToken().subscribe((value: any) => {
       sessionStorage.setItem('TEMP_TOKEN', value.token);
-      await this.router.navigate([`/p/${value.id}`], {
+
+      this.router.navigate([`/p/${value.id}`], {
         state: {
           progress: true,
           files: ($event.target as HTMLInputElement).files
         }
-      });
+      }).then(r => {
+        console.log('navigate oldu');
+      })
+
     });
   }
 }

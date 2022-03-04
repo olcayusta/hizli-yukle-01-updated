@@ -2,32 +2,32 @@
   <button mat-icon-button (click)="closeSidenav.emit()">
     <app-menu-icon></app-menu-icon>
   </button>
-  <a routerLink="/" class="site-link">
+  <!--<a routerLink="/" class="site-link">
     <span class="toolbar-title">Hızlı Resim</span>
-  </a>
+  </a>-->
 </mat-toolbar>
 <mat-nav-list>
   <a mat-list-item routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact: true}" (click)="closeSidenav.emit()">
-    <app-home-icon></app-home-icon>
+<!--    <app-home-icon></app-home-icon>-->
     <span>Ana sayfa</span>
   </a>
   <a mat-list-item routerLinkActive="active" routerLink="/library" (click)="closeSidenav.emit()">
-    <app-photo-library-icon></app-photo-library-icon>
+    <!--<app-photo-library-icon></app-photo-library-icon>-->
     <span>Fotoğraflar</span>
   </a>
 </mat-nav-list>
 <mat-divider></mat-divider>
 <mat-nav-list>
   <mat-list-item (click)="closeSidenav.emit(); openSettingsDialog()">
-    <app-settings-icon></app-settings-icon>
+    <!--<app-settings-icon></app-settings-icon>-->
     <span>Hesap & ayarlar</span>
   </mat-list-item>
   <a mat-list-item routerLink="/help" (click)="closeSidenav.emit()">
-    <app-help-icon></app-help-icon>
+ <!--   <app-help-icon></app-help-icon>-->
     <span>Yardım</span>
   </a>
   <mat-list-item (click)="closeSidenav.emit(); openFeedbackDialog()">
-    <app-feedback-icon></app-feedback-icon>
+  <!--  <app-feedback-icon></app-feedback-icon>-->
     <span>Geri bildirim gönder</span>
   </mat-list-item>
 </mat-nav-list>
